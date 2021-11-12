@@ -1,13 +1,211 @@
-body {
+/* Global */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+body,
+html {
+  font-family: "Lato", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+.container {
+  margin: auto;
+  width: 80%;
+  overflow: hidden;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+hr {
+  border: 1px solid black;
+  width: 60%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Nav bar */
+.navItems {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+.navItems h1 {
+  font-size: 54px;
+}
+.navLists {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+.navLists ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex: auto;
+  align-items: center;
+
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+/* Home page */
+.HomePage {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  flex: auto;
+  justify-content: flex-end;
+  align-items: center;
+}
+.devImg {
+  width: 50%;
+  height: fit-content;
+  z-index: 1;
+  margin-left: 10%;
+}
+.homeInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: auto;
+}
+.homeInfo h1 {
+  font-size: 100px;
+  font-weight: 900;
+}
+.typingEffect {
+  font-size: 48px;
+  font-weight: bolder;
+  margin-left: 5%;
+}
+.blueCircle {
+  position: absolute;
+  right: 8%;
+  z-index: -1;
+  width: 38%;
+}
+
+/* About page */
+.aboutPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  flex: auto;
+}
+.profile {
+  width: 80%;
+  height: fit-content;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px gray;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  font-weight: bolder;
+  font-size: 34px;
+  text-align: center;
+}
+
+/* Education page */
+.education {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: auto;
+}
+.Dev3 {
+  width: 45%;
+}
+.educationDetail {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bolder;
+  border: red 5px dashed;
+  height: fit-content;
+  width: 50%;
+}
+
+/* Skill cards */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 2%;
+  width: 25%;
+  height: fit-content;
+  margin: 2%;
+  font-weight: bolder;
+  font-size: 24px;
+  text-align: center;
+}
+.card img {
+  width: 50%;
+  transition: 400ms;
+  margin: 0 0 8% 0;
+}
+.card img:hover {
+  transform: scale(1.1);
+}
+
+/* background skills page */
+.backgroundImg {
+  position: absolute;
+  z-index: -1;
+  left: 3%;
+  width: 40%;
+  top: 30%;
+}
+.backgroundImg2 {
+  position: absolute;
+  z-index: -1;
+  right: 5%;
+  top: 150%;
+}
+
+/* Contact page */
+.contactIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60vh;
+}
+.contractForm {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex: auto;
+}
+.contactIcon img {
+  width: 20%;
+}
+.socialImg {
+  transition: 300ms;
+}
+.socialImg:hover {
+  transform: scale(1.2);
+}
+.emailForm {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+.emailForm input {
+  font-size: 24px;
+  padding: 0.5%;
+}
+.writeMe {
+  text-align: center;
+  margin-top: 10%;
 }
